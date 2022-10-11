@@ -16,7 +16,7 @@ class MainWindow(QWidget, Ui_Form):
 
     def calculate(self, parent=None):
         k = 1.38e-23
-        c = 3.0e8
+        c = 3e8
         t0 = 273.15 + 25
         pi = 3.14
 
@@ -34,7 +34,7 @@ class MainWindow(QWidget, Ui_Form):
 
         valueWaveLength = c / valueCarrierFrequency
 
-        valueRmaxMolecular = valuePeakPower * pow(valueAntennaGain, 2) * pow(valueWaveLength, 2) * valueTargetRCS
+        valueRmaxMolecular = valuePeakPower * pow(valueAntennaGain, 2) * pow(valueWaveLength, 2) * valueBaseRCS
         valueRmaxDenominator = pow(4 * pi, 3) * k * t0 * valueReceiverLength * valueReceiverNoiseFactor * valueSystemLoss * valueOutputMinSigNoiseRatio
         valueRmax = round(pow(valueRmaxMolecular / valueRmaxDenominator, 0.25) / 1000, 3)
 
