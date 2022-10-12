@@ -18,7 +18,7 @@ class Ui_Form(object):
         Form.setMinimumSize(QtCore.QSize(1000, 700))
         Form.setMaximumSize(QtCore.QSize(1000, 700))
         self.Title = QtWidgets.QLabel(Form)
-        self.Title.setGeometry(QtCore.QRect(210, 20, 451, 51))
+        self.Title.setGeometry(QtCore.QRect(270, 20, 451, 51))
         font = QtGui.QFont()
         font.setPointSize(24)
         font.setBold(True)
@@ -134,10 +134,10 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "RadarSystemSimulation"))
+        Form.setWindowTitle(_translate("Form", "RadarSystemSimulation By 李发政"))
         self.Title.setText(_translate("Form", "早期雷达探测系统的模拟"))
         self.RadarReceiverWave.setText(_translate("Form", "雷达接收机显示器波形"))
-        self.PeakPower.setText(_translate("Form", "峰值频率(KW)"))
+        self.PeakPower.setText(_translate("Form", "峰值频率(kW)"))
         self.AntennaGain.setText(_translate("Form", "天线增益(dB)"))
         self.CarrierFrequency.setText(_translate("Form", "载波频率(GHz)"))
         self.ReceiverLength.setText(_translate("Form", "接收机带宽(MHz)"))
@@ -146,8 +146,8 @@ class Ui_Form(object):
         self.OutputMinSigNoiseRatio.setText(_translate("Form", "输出端最低信噪比(dB)"))
         self.BaseRCS.setText(_translate("Form", "基准RCS(m2)"))
         self.TargetRCS.setText(_translate("Form", "目标RCS(m2)"))
-        self.TargetDistance.setText(_translate("Form", "目标距离(Km)"))
-        self.RadarDistanceRange.setText(_translate("Form", "雷达距离量程(Km)"))
-        self.RadarDistanceRange_2.setText(_translate("Form", "雷达作用距离(Km)"))
+        self.TargetDistance.setText(_translate("Form", "目标距离(km)"))
+        self.RadarDistanceRange.setText(_translate("Form", "雷达距离量程(km)"))
+        self.RadarDistanceRange_2.setText(_translate("Form", "雷达作用距离(km)"))
         self.StartSimulation.setText(_translate("Form", "开始仿真"))
         self.ExitSystem.setText(_translate("Form", "退出系统"))
